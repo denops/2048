@@ -1,6 +1,6 @@
 var game={
 	data:[],
-	score:0, //保存分数
+	score:0, //保存游戏分数
 	randomNum:function(){
 		if(!this.isFull()){//如果不满才生成随机数
 			//对象的方法使用对象的属性必须+this
