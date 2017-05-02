@@ -1,0 +1,72 @@
+#gridPanel{
+	/*宽高:480x480*/
+	width:480px; height:480px;
+	/*整体居中*/
+	margin:0 auto;
+	/*背景颜色：bbada0*/
+	background-color:#bbada0;
+	/*边角：10px*/
+	border-radius: 10px;
+	/*相对定位*/
+	position:relative;
+}
+.grid,.cell{
+	width:100px; height:100px;
+	border-radius:6px;
+}
+.grid{
+	background-color: #ccc0b3;
+	margin-top:16px;
+	margin-left:16px;
+	float:left;
+}
+.cell{
+	position:absolute;
+	text-align:center;
+	line-height:100px;
+	font-size:60px;
+}
+#c00,#c01,#c02,#c03{top:16px;}
+#c10,#c11,#c12,#c13{top:132px;}
+#c20,#c21,#c22,#c23{top:248px;}
+#c30,#c31,#c32,#c33{top:364px;}
+
+#c00,#c10,#c20,#c30{left:16px;}
+#c01,#c11,#c21,#c31{left:132px;}
+#c02,#c12,#c22,#c32{left:248px;}
+#c03,#c13,#c23,#c33{left:364px;}
+
+.n2{background-color:#eee4da; color:#776e65;}
+.n4{background-color:#ede0c8; color:#776e65;}
+.n8{background-color:#f2b179; color:#fff;}
+.n16{background-color:#f59563; color:#fff;}
+.n32{background-color:#f67c5f; color:#fff;}
+.n64{background-color:#f65e3b; color:#fff;}
+.n128{background-color:#edcf72; color:#fff;}
+.n256{background-color:#edcc61; color:#fff;}
+.n512{background-color:#9c0; color:#fff;}
+.n1024{background-color:#33b5e5; color:#fff; font-size:40px;}
+.n2048{background-color:#09c; color:#fff; font-size:40px;}
+.n4096{background-color:#a6c; color:#fff; font-size:40px;}
+.n8192{background-color:#93c; color:#fff; font-size:40px;}
+
+/*分数样式*/
+p{font-family: Arial; font-weight:bold;
+	width:480px; margin: 0 auto;
+	font-size:40px; padding-top:15px;
+}
+/*gameOver界面*/
+#gameOver{display:none; position:absolute; width: 100%; height: 100%;
+	top: 0; left: 0;
+}
+#gameOver div{ width:100%; height:100%;
+	background-color:#555;  opacity: 0.5;
+}
+#gameOver p{ position:absolute;
+	width:300px ; height: 200px; border-radius:10px;
+	border:1px solid #edcf72; background-color:#fff;
+	top: 200px; left:35%; text-align: center; line-height: 1.6em;
+}
+.button{background-color:#9f8b77; border-radius:6px;
+	cursor:pointer; color: #fff; padding:10px;
+}
